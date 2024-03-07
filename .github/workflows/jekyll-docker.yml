@@ -1,20 +1,25 @@
-name: Jekyll site CI
+name: site Jekyll CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["principal"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["principal"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the site in the jekyll/builder container
+    - name: Checkout do repositório
+      uses: actions/checkout@v3
+
+    - name: Construir o site no contêiner jekyll/builder
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+
+    - name: Imprimir link para o site
+      run: |
+        echo "Link para o site: https://mcds04.github.io/QR-CODE-COMPONENT-MAIN"
