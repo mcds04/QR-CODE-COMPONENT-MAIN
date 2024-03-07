@@ -1,4 +1,11 @@
 # Frontend Mentor - QR code component
+Img -01
+![Imag-QRcode-component-main-git](https://github.com/mcds04/QR-CODE-COMPONENT-MAIN/assets/100251166/592f4aae-8b3d-4ac4-85b9-04a567f7d256)
+
+Img - 02
+![URL COPIADO PARA AREA DE TRANFERENCIA](https://github.com/mcds04/QR-CODE-COMPONENT-MAIN/assets/100251166/46e9b016-f396-46ba-aaad-374d8505f6cb)
+
+
 
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
 
